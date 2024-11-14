@@ -10,7 +10,6 @@ interface AuthLayoutProps {
 
 export default function AuthLayout({
   children,
-  type,
   bgImageUrl,
 }: AuthLayoutProps) {
   return (
