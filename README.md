@@ -1,51 +1,28 @@
-# React + TypeScript + Vite
+# Keepr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Keepr is a side project designed to help users capture and store cherished memories in a digital capsule. It's built with a focus on enhancing full-stack development skills, featuring a user-friendly interface and robust backend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Memory Capsule**: Upload images with titles and descriptions.
+- **User Authentication**: Secure sign-up, login, and account validation.
+- **Responsive Design**: Optimized for various screen sizes.
+- **AWS Integration**: Powered by AWS for image storage and backend functionality.
+- **Personalized Dashboard**: Manage your uploaded memories seamlessly.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Backend**: AWS Amplify, Amazon Cognito
+- **Database**: AWS S3 for memory storage
 
-- Configure the top-level `parserOptions` property like this:
+## Key Highlights
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Keepr was developed as a learning experience to explore backend development and full-stack application building. It combines a smooth user experience with scalable cloud technologies.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Live Demo
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Check it out [here](#)!
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-"# keepr" 
+---
+_This project was a first attempt at backend development and a step toward expanding my knowledge in full-stack web development._
