@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -15,22 +15,22 @@ export default function Footer() {
           </nav>
           <div className="flex gap-6">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/eniolamusu/"
               className="hover:text-lime-400 hover:rotate-12 transition duration-300"
             >
-              <FaFacebook className="w-8 h-8" />
+              <FaLinkedin className="w-8 h-8" />
             </a>
             <a
-              href="#"
-              className="hover:text-lime-400 hover:rotate-12 transition duration-300"
-            >
-              <FaTwitter className="w-8 h-8" />
-            </a>
-            <a
-              href="#"
+              href="https://www.instagram.com/emmanuel.dev/"
               className="hover:text-lime-400 hover:rotate-12 transition duration-300"
             >
               <FaInstagram className="w-8 h-8" />
+            </a>
+            <a
+              href="https://github.com/ceesharptech/"
+              className="hover:text-lime-400 hover:rotate-12 transition duration-300"
+            >
+              <FaGithub className="w-8 h-8" />
             </a>
           </div>
         </div>

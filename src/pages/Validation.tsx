@@ -8,7 +8,6 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Camera } from "lucide-react";
 import { confirmSignUp, resendSignUpCode } from "aws-amplify/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -93,7 +92,6 @@ export default function OTPValidation() {
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <div className="flex items-center justify-center mb-4">
-            <Camera className="h-8 w-8 text-blue-500 mr-2" />
             <CardTitle className="text-2xl font-bold text-center text-blue-600">
               Keepr
             </CardTitle>
@@ -116,7 +114,7 @@ export default function OTPValidation() {
                 value={data}
                 onChange={(e) => handleChange(e.target, index)}
                 onKeyDown={(e) => handleBackspace(e, index)}
-                className="w-12 h-12 text-center text-lg font-semibold border-2 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200 transition-all duration-300"
+                className="w-10 h-10 text-center text-lg font-semibold border-2 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200 transition-all duration-300"
               />
             ))}
           </div>
